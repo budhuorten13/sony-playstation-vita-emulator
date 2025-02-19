@@ -1,0 +1,14 @@
+[package]
+name = "sony_playstation_vita_emulator"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+gtk = "0.9.0"
+gdk = "0.9.0"
+glib = "0.9.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+opt-level = 3
